@@ -4,6 +4,8 @@ var DynamicDancer = function(top, left, timeBetweenSteps){
   this.oldStep = this.step;
   this.step = function(){
     this.oldStep();
+    if (window.stop) return;
+
     //this.$node.toggle();
     var $body = $('body');
     var randomNumX = Math.random()*$body.width();
