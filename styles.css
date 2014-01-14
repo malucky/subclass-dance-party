@@ -25,3 +25,43 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+
+/*robot */
+.robot_house {
+  height: 150px;
+  width: 300px;
+  margin: 0 auto;
+}
+.beep {
+  height: 0;
+  width: 5px; 
+  border: 5px solid transparent;
+  border-bottom: 80px solid #888;
+  border-top: 10px solid #777; 
+}
+.brain {
+  background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
+  background: -moz-radial-gradient(circle, white 15%, transparent 40%) #cc5;
+  background: -webkit-radial-gradient(circle, white 45%, transparent 30%) #cc5;
+  background-size: 75px 150px;
+  width: 150px;
+  height: 150px;
+  border-radius: 60px 60px 10px 10px;
+  border-bottom: 40px double #666;
+}
+.torso {
+  height: 0;
+  width: 140px;
+  border-top: 300px solid #bc6;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-radius: 20px 20px 100px 100px;
+}
+.foot {
+  height: 40px;
+  width: 40px;
+  background: #ccc;
+  border-radius: 40px;
+  border: 15px solid #999;
+}
