@@ -65,3 +65,9 @@ body, a:link, a:visited, a:active{
   border-radius: 40px;
   border: 15px solid #999;
 }
+
+
+/* dynamic dancer */
+.dynamic {
+  border: 15px solid blue;
+}

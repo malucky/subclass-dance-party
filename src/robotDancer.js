@@ -7,9 +7,9 @@ var RobotDancer = function(top, left, timeBetweenSteps){
   this.$node.append('<div class="foot robot_house"></div>');
   console.log(this.$node);
   this.oldStep = this.step;
-  this.step = function() {
-    this.oldStep();
-    this.$node.toggle();
+  this.step = function(){
+  this.oldStep();
+  this.$node.toggle();
   };
 };
 
