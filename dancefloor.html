@@ -13,6 +13,7 @@
 
     <div class="topbar">
       <span class="title">object dance party</span>
+      <a href="#" class="line_up">Line Up!</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="RobotDancer">add a robot dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="DynamicDancer">add a dynamic dancer</a>
@@ -49,6 +50,22 @@
 
           $('body').append(dancer.$node);
         });
+
+        window.stop = false;
+        $(".line_up").on("click", function(event) {
+          console.log('stopping it');
+          window.stop = true;
+            var $dancers = $('.dancer');
+            console.log($dancers);
+
+            $dancers.each(function(index, element){
+              $(element).css({
+                left: 0
+              });
+            });
+
+        });
+
       });
     </script>
 
