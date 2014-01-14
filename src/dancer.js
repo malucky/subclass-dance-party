@@ -5,6 +5,7 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.setPosition(top, left);
   this.left = left;
   this.top = top;
+  window.dancers.push(this);
 };
 
 Dancer.prototype.step = function() {

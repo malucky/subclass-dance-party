@@ -26,13 +26,13 @@
     <script>
       $(document).ready(function(){
         window.dancers = [];
-        // window.info = {};
-        // window.info[midX] = $("body").width() / 2;
-        // window.info[midY] = $("body").height() / 2;
+        window.info = {};
+        window.info['midX'] = $("body").width() / 2;
+        window.info['midY'] = $("body").height() / 2;
 
-        // $(".gather").on("click", function(event){
-        //   gather();
-        // });
+        $(".gather").on("click", function(event){
+          window.info.gather = !window.info.gather;
+        });
 
         $(".addDancerButton").on("click", function(event){
           /* This function sets up the click handlers for the create-dancer
