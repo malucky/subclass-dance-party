@@ -25,7 +25,13 @@ var DynamicDancer = function(top, left, timeBetweenSteps){
       "bottom": randomNumY, 
       "opacity": "0.5"
      }, "slow");
-    this.$node.css({border: "15px solid " + randomColor()});
+    this.$node.css({
+      border: "15px solid " + randomColor()
+    //   transform: 'translate(100px, 50%)',
+    //   //left: randomNumX,
+    //   bottom: randomNumY,
+    //   opacity: 0.5
+     });
     //this.$node.removeClass('dancer');
     var that = this;
     // setTimeout(function(){
