@@ -6,6 +6,8 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.left = left;
   this.top = top;
   window.dancers.push(this);
+  $('body').append(this.$node);
+
 };
 
 Dancer.prototype.step = function() {
